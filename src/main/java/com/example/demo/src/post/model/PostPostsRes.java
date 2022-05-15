@@ -1,0 +1,21 @@
+package com.example.demo.src.post.model;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.List;
+
+@Getter
+@Setter
+@AllArgsConstructor
+public class PostPostsRes {
+    private int postIdx;
+    private String content;
+    private List<PostImgUrlReq> pstImgUrls;
+
+    public PostPostsRes(int postIdx) {
+        this.postIdx = postIdx;
+    }
+}
